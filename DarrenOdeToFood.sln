@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarrenOdeToFood", "DarrenOdeToFood\DarrenOdeToFood.csproj", "{54EEE516-E0D2-4C64-A3E0-0989CC4352B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFood", "DarrenOdeToFood\OdeToFood.csproj", "{54EEE516-E0D2-4C64-A3E0-0989CC4352B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarrenOdeToFoodTests", "DarrenOdeToFoodTests\DarrenOdeToFoodTests.csproj", "{2147AF8F-F940-4A2D-A84D-3CC409E162F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToFoodTests", "DarrenOdeToFoodTests\OdeToFoodTests.csproj", "{2147AF8F-F940-4A2D-A84D-3CC409E162F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

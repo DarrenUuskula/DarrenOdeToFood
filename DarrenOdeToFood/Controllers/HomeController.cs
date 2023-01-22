@@ -1,9 +1,9 @@
-﻿using DarrenOdeToFood.Models;
+﻿using OdeToFood.Models;
 using Microsoft.AspNetCore.Mvc;
-using DarrenOdeToFood.Models;
+using OdeToFood.Models;
 using System.Diagnostics;
 
-namespace DarrenOdeToFood.Controllers
+namespace OdeToFood.Controllers
 {
 	public class HomeController : Controller
 	{

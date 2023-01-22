@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using DarrenOdeToFood.Filters;
+using OdeToFood.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
-namespace DarrenOdeToFood.Controllers
+namespace OdeToFood.Controllers
 {
     [Log]
     public class CuisineController : Controller

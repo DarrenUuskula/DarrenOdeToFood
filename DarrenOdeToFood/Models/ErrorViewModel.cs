@@ -1,4 +1,4 @@
-namespace DarrenOdeToFood.Models
+namespace OdeToFood.Models
 {
 	public class ErrorViewModel
 	{

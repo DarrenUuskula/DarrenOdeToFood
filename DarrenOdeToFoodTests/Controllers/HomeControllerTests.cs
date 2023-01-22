@@ -2,15 +2,15 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DarrenOdeToFood.Controllers;
-using DarrenOdeToFood.Models;
+using OdeToFood.Controllers;
+using OdeToFood.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DarrenOdeToFood.Controllers.Tests
+namespace OdeToFood.Controllers.Tests
 {
 	[TestClass()]
 	public class HomeControllerTests

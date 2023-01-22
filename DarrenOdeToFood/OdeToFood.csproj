@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-DarrenOdeToFood-83951592-2a06-4efb-899c-a35c17ed798e</UserSecretsId>
+    <UserSecretsId>aspnet-OdeToFood-83951592-2a06-4efb-899c-a35c17ed798e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

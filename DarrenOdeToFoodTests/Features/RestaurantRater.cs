@@ -1,4 +1,4 @@
-﻿using DarrenOdeToFood.Models;
+﻿using OdeToFood.Models;
 using System;
 
 namespace OdeToFood.Tests.Features

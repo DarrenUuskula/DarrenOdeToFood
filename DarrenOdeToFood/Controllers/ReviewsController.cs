@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using DarrenOdeToFood.Models;
+using OdeToFood.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DarrenOdeToFood.Controllers
+namespace OdeToFood.Controllers
 {
     public class ReviewsController : Controller
     {

@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using DarrenOdeToFood.Models;
+using OdeToFood.Models;
 
-namespace DarrenOdeToFood.Data
+namespace OdeToFood.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -13,6 +13,6 @@ namespace DarrenOdeToFood.Data
                         : base(options)
         {
         }
-        public DbSet<DarrenOdeToFood.Models.RestaurantReview> RestaurantReview { get; set; }
+        public DbSet<OdeToFood.Models.RestaurantReview> RestaurantReview { get; set; }
     }
 }

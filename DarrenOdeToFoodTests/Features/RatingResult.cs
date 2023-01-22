@@ -1,4 +1,4 @@
-﻿namespace DarrenOdeToFood.Tests.Features
+﻿namespace OdeToFood.Tests.Features
 {
 	public class RatingResult
 	{
