@@ -8,23 +8,29 @@
 			<th>
 				@Html.DisplayNameFor(model => model.Body)
 			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ReviewerName)
+			</th>
 			<th></th>
 		</tr>
 	</thead>
 	<tbody>
 		@foreach (var item in Model)
 		{
-				<tr>
-					<td>
+			<tr>
+				<td>
 					@Html.DisplayFor(modelItem => item.Rating)
-					</td>
-					<td>
+				</td>
+				<td>
 					@Html.DisplayFor(modelItem => item.Body)
-					</td>
-					<td>
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ReviewerName)
+				</td>
+				<td>
 					<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-					</td>
-				</tr>
+				</td>
+			</tr>
 		}
 	</tbody>
 </table>
