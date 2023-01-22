@@ -21,6 +21,12 @@ namespace DarrenOdeToFood.Controllers
 
 		public IActionResult Privacy()
 		{
+			var controller = RouteData.Values["controller"];
+			var action = RouteData.Values["action"];
+			var id = RouteData.Values["id"];
+
+			ViewBag.Message = $"{controller}::{action} {id}";
+
 			return View();
 		}
 
