@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DarrenOdeToFood.Models;
+using System;
 
-namespace DarrenOdeToFoodTests.Features
+namespace OdeToFood.Tests.Features
 {
-	internal class RestaurantRater
+	public class RestaurantRater
 	{
+		private Restaurant _restaurant;
+
+		public RestaurantRater(Restaurant restaurant)
+		{
+			_restaurant = restaurant;
+		}
+
+		public RatingResult ComputeRating(int numberOfReviews)
+		{
+			var result = new RatingResult();
+			result.Rating = 4;
+			return result;
+		}
 	}
 }

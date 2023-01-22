@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DarrenOdeToFoodTests.Features
+﻿namespace DarrenOdeToFood.Tests.Features
 {
-	internal class RatingResult
+	public class RatingResult
 	{
+		public int Rating { get; internal set; }
 	}
 }

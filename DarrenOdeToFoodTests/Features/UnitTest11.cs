@@ -1,12 +1,24 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DarrenOdeToFood.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DarrenOdeToFoodTests.Features
+namespace OdeToFood.Tests.Features
 {
-	internal class UnitTest11
+	[TestClass]
+	public class UnitTest11
 	{
+		[TestMethod]
+		public void MyTestMethod()
+		{
+			var data = new Restaurant();
+			data.Reviews = new List<RestaurantReview>();
+			data.Reviews.Add(new RestaurantReview() { Rating = 4 });
+
+			var rater = new RestaurantRater(data);
+			var result = rater.ComputeRating(10);
+
+			Assert.AreEqual(4, result.Rating);
+		}
 	}
 }
