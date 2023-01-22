@@ -22,13 +22,13 @@ namespace OdeToFood.Controllers
         // GET: Restaurants
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Restaurants.ToListAsync());
+            return View(await _context.Restaurants.ToListAsync());
         }
 
         // GET: Restaurants/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Restaurants == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -68,7 +68,7 @@ namespace OdeToFood.Controllers
         // GET: Restaurants/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Restaurants == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -119,7 +119,7 @@ namespace OdeToFood.Controllers
         // GET: Restaurants/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Restaurants == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -139,23 +139,15 @@ namespace OdeToFood.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Restaurants == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Restaurants'  is null.");
-            }
             var restaurant = await _context.Restaurants.FindAsync(id);
-            if (restaurant != null)
-            {
-                _context.Restaurants.Remove(restaurant);
-            }
-            
+            _context.Restaurants.Remove(restaurant);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool RestaurantExists(int id)
         {
-          return _context.Restaurants.Any(e => e.Id == id);
+            return _context.Restaurants.Any(e => e.Id == id);
         }
     }
 }
