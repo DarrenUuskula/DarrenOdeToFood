@@ -13,7 +13,9 @@ namespace DarrenOdeToFood.Controllers
         {
             var message = HtmlEncoder.Default.Encode(name);
 
-            return Content(message);
+            //return Content(message);
+            //return new EmptyResult();
+            return File("/css/site.css", "text/css");
         }
     }
 }
