@@ -1,12 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace DarrenOdeToFood.Filters
 {
-    public class LogAttribute : Controller
+    public class LogAttribute : ActionFilterAttribute
     {
-        public IActionResult Index()
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
-            return View();
+            base.OnActionExecuting(context);
+        }
+        public override void OnActionExecuted(ActionExecutedContext context)
+        {
+            base.OnActionExecuted(context);
+        }
+        public override void OnResultExecuting(ResultExecutingContext context)
+        {
+            base.OnResultExecuting(context);
+        }
+        public override void OnResultExecuted(ResultExecutedContext context)
+        {
+            base.OnResultExecuted(context);
         }
     }
 }
